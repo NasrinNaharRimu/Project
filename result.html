@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <h1>Result</h1>
+    <p id=res></p>
+
+    <script>
+    var data = window.location.search;
+        var params = new URLSearchParams(data);
+
+        var name = params.get("name");
+        var age = params.get("age");
+        var email = params.get("email");
+        var mobile = params.get("mobile");
+        var city = params.get("city");
+        var fathersname = params.get("fathersname");
+        var mothersname = params.get("mothersname");
+        var occupation = params.get("occupation");
+        var sscresult = params.get("sscresult");
+        var hscresult = params.get("hscresult");
+        var honsresult = params.get("honsresult");
+        var presentaddress = params.get("presentaddress");
+        var permanentaddress = params.get("permanentaddress");
+        var gender = params.get("gender");
+        var nationality = params.get("nationality");
+
+        var getdata = "Name:" + name + "<br>";
+        getdata += "Age:" + age + "<br>";
+        getdata += "Email:" + email + "<br>";
+        getdata += "Mobile:" + mobile + "<br>";
+        getdata += "City:" + city + "<br>";
+        getdata += "Father's Name :" + fathersname + "<br>";
+        getdata += "Mother's Name :" + mothersname + "<br>";
+        getdata += "Occupation:" + occupation + "<br>";
+        getdata += "SSC Result:" + sscresult + "<br>";
+        getdata += "HSC Result:" + hscresult + "<br>";
+        getdata += "Hons Result:" + honsresult + "<br>";
+        getdata += "Present Address:" + presentaddress + "<br>";
+        getdata += "Permanent Address:" + permanentaddress + "<br>";
+        getdata += "Gender:" + gender + "<br>";
+        getdata += "Nationality:" + nationality;
+
+        document.getElementById("res").innerHTML = getdata;
+    </script>
+</body>
+</html>
